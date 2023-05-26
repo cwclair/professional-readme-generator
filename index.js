@@ -57,43 +57,38 @@ inquirer
 .then(response => {
     fs.writeFile('README-auto.md', `# ${response.projectName}
 
-    ## Table of Contents
-    1. [Description](#description)
-    2. [Installation](#installation)
-    3. [Usage](#usage)
-    4. [License](#license)
-    5. [Contributing](#contributing)
-    6. [Tests](#tests)
-    7. [Questions](#questions)
+## Table of Contents
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [License](#license)
+5. [Contributing](#contributing)
+6. [Tests](#tests)
+7. [Questions](#questions)
     
-    ## Description <a name="description"></a>
+## Description <a name="description"></a>
     ${response.description}
     
-    ## Installation <a name="installation"></a>
-
+## Installation <a name="installation"></a>
     ${response.installation}
     
-    ## Usage <a name="usage"></a>
-
+## Usage <a name="usage"></a>
     ${response.usage}
     
-    ## License <a name="license"></a>
-
+## License <a name="license"></a>
     ${response.license}
     
-    ## Contributing <a name="contributing"></a>
-
+## Contributing <a name="contributing"></a>
     ${response.collaborators}
     
-    ## Tests <a name="tests"></a>
-    
+## Tests <a name="tests"></a>
     ${response.tests}
 
-    ## Questions <a name="questions"></a>
-    GitHub profile: https://github.com/${response.githubUserName}   
-    Email address: ${response.emailAddress}`, (err) =>
+## Questions <a name="questions"></a>
+GitHub profile: https://github.com/${response.githubUserName}   
+Email address: ${response.emailAddress}`, (err) =>
     err ? console.error(err) : console.log('Commit logged!')
-  )});
+)});
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
