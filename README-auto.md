@@ -1,4 +1,18 @@
-# README Generator
+// TODO: Create a function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
+function renderLicenseBadge(license) {}
+
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+function renderLicenseLink(license) {}
+
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+function renderLicenseSection(license) {}
+
+// TODO: Create a function to generate markdown for README
+function generateMarkdown(response) {
+  return `# README test run
 
 ## Table of Contents
 1. [Description](#description)
@@ -8,25 +22,28 @@
 5. [Contributing](#contributing)
 6. [Tests](#tests)
 7. [Questions](#questions)
-    
+      
 ## Description <a name="description"></a>
-This application generates a new, professional README document, placing information in the corresponding sections.
-    
+test
+      
 ## Installation <a name="installation"></a>
-none
-    
+test
+      
 ## Usage <a name="usage"></a>
-On the command line, enter "node index.js"
-    
+test
+      
 ## License <a name="license"></a>
 other
-    
+      
 ## Contributing <a name="contributing"></a>
-I constructed this application based on materials learned in edX Full Stack Bootcamp.
-    
+test
+      
 ## Tests <a name="tests"></a>
-No instructions to provide at this point.
-
+test
+  
 ## Questions <a name="questions"></a>
 GitHub profile: https://github.com/cwclair   
-Email address: christopher.w.clair@gmail.com
+Email address: christopher.w.clair@gmail.com`;
+}
+
+module.exports = generateMarkdown;

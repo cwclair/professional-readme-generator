@@ -5,6 +5,20 @@ const inquirer = require('inquirer');
 // TODO: Create an array of questions for user input
 const questions = ['What is the title of your project?', 'Enter a description of your project.', 'Installation instructions (if applicable):', 'Provide instructions and examples for use.', 'List any collaborators, third-party assets, or tutorials you used to create this project.', 'What license did you use for this project?', 'List any test instructions.', 'Enter your GitHub username.', 'Enter your email address.'];
 
+let generateMarkdown = ({ projectName, description, installation, usage, collaborators, license, tests, gitHubUserName, emailAddress }) => {
+    const template = fs.readFileSync('./generateMarkdown.js', 'utf8');
+    return template
+      .replace('${projectName}', projectName)
+      .replace('${description}', description)
+      .replace('${installation}', installation)
+      .replace('${usage}', usage)
+      .replace('${collaborators}', collaborators)
+      .replace('${license}', license)
+      .replace('${tests}', tests)
+      .replace('${gitHubUserName}', gitHubUserName)
+      .replace('${emailAddress}', emailAddress)
+  };
+
 inquirer
   .prompt([
     {
@@ -55,38 +69,9 @@ inquirer
     },
 ])
 .then(response => {
-    fs.writeFile('README-auto.md', `# ${response.projectName}
+    const readmeContent = generateMarkdown(response);
 
-## Table of Contents
-1. [Description](#description)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [License](#license)
-5. [Contributing](#contributing)
-6. [Tests](#tests)
-7. [Questions](#questions)
-    
-## Description <a name="description"></a>
-${response.description}
-    
-## Installation <a name="installation"></a>
-${response.installation}
-    
-## Usage <a name="usage"></a>
-${response.usage}
-    
-## License <a name="license"></a>
-${response.license}
-    
-## Contributing <a name="contributing"></a>
-${response.collaborators}
-    
-## Tests <a name="tests"></a>
-${response.tests}
-
-## Questions <a name="questions"></a>
-GitHub profile: https://github.com/${response.gitHubUserName}   
-Email address: ${response.emailAddress}`, (err) =>
+    fs.writeFile('README-auto.md', readmeContent, (err) =>
     err ? console.error(err) : console.log('Commit logged!')
 )});
 
