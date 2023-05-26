@@ -1,4 +1,4 @@
-# ${response.projectName}
+# ${projectName}
 
 ## Table of Contents
 1. [Description](#description)
@@ -8,25 +8,25 @@
 5. [Contributing](#contributing)
 6. [Tests](#tests)
 7. [Questions](#questions)
-    
+      
 ## Description <a name="description"></a>
-${response.description}
-    
+${description}
+      
 ## Installation <a name="installation"></a>
-${response.installation}
-    
+${installation}
+      
 ## Usage <a name="usage"></a>
-${response.usage}
-    
+${usage}
+      
 ## License <a name="license"></a>
-${response.license}
-    
+${license}
+      
 ## Contributing <a name="contributing"></a>
-${response.collaborators}
-    
+${collaborators}
+      
 ## Tests <a name="tests"></a>
-${response.tests}
-
+${tests}
+  
 ## Questions <a name="questions"></a>
-GitHub profile: https://github.com/${response.gitHubUserName}   
-Email address: ${response.emailAddress}
+GitHub profile: https://github.com/${gitHubUserName}   
+Email address: ${emailAddress}

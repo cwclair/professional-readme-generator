@@ -6,7 +6,7 @@ const inquirer = require('inquirer');
 const questions = ['What is the title of your project?', 'Enter a description of your project.', 'Installation instructions (if applicable):', 'Provide instructions and examples for use.', 'List any collaborators, third-party assets, or tutorials you used to create this project.', 'What license did you use for this project?', 'List any test instructions.', 'Enter your GitHub username.', 'Enter your email address.'];
 
 let generateMarkdown = ({ projectName, description, installation, usage, collaborators, license, tests, gitHubUserName, emailAddress }) => {
-    const template = fs.readFileSync('./generateMarkdown.js', 'utf8');
+    const template = fs.readFileSync('./readme-template.md', 'utf8');
     return template
       .replace('${projectName}', projectName)
       .replace('${description}', description)

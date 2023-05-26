@@ -1,18 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(response) {
-  return `# README test run
+# README Generator
 
 ## Table of Contents
 1. [Description](#description)
@@ -24,26 +10,23 @@ function generateMarkdown(response) {
 7. [Questions](#questions)
       
 ## Description <a name="description"></a>
-test
+testing
       
 ## Installation <a name="installation"></a>
-test
+testing
       
 ## Usage <a name="usage"></a>
-test
+testing
       
 ## License <a name="license"></a>
 other
       
 ## Contributing <a name="contributing"></a>
-test
+testing
       
 ## Tests <a name="tests"></a>
-test
+testing
   
 ## Questions <a name="questions"></a>
 GitHub profile: https://github.com/cwclair   
-Email address: christopher.w.clair@gmail.com`;
-}
-
-module.exports = generateMarkdown;
+Email address: christopher.w.clair@gmail.com
