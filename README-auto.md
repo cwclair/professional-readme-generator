@@ -1,4 +1,4 @@
-# README
+# README Generator
 
 ## Table of Contents
 1. [Description](#description)
@@ -10,19 +10,19 @@
 7. [Questions](#questions)
     
 ## Description <a name="description"></a>
-    This project generates a professional README document for a new project.
+    This application creates a professional README document for a new project.
     
 ## Installation <a name="installation"></a>
     none
     
 ## Usage <a name="usage"></a>
-    On the command line, enter node index.js
+    On the command line, type node index.js to begin the question prompts. Once all questions have been answered, a file called README.md will be created, with information in the appropriate sections.
     
 ## License <a name="license"></a>
     other
     
 ## Contributing <a name="contributing"></a>
-    Classroom lessons through edX Full Stack Boot Camp.
+    Classroom materials via edX Full Stack Boot Camps.
     
 ## Tests <a name="tests"></a>
     none
