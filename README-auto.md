@@ -10,23 +10,23 @@
 7. [Questions](#questions)
     
 ## Description <a name="description"></a>
-    This application creates a professional README document for a new project.
+This application generates a new, professional README document, placing information in the corresponding sections.
     
 ## Installation <a name="installation"></a>
-    none
+none
     
 ## Usage <a name="usage"></a>
-    On the command line, type node index.js to begin the question prompts. Once all questions have been answered, a file called README.md will be created, with information in the appropriate sections.
+On the command line, enter "node index.js"
     
 ## License <a name="license"></a>
-    other
+other
     
 ## Contributing <a name="contributing"></a>
-    Classroom materials via edX Full Stack Boot Camps.
+I constructed this application based on materials learned in edX Full Stack Bootcamp.
     
 ## Tests <a name="tests"></a>
-    none
+No instructions to provide at this point.
 
 ## Questions <a name="questions"></a>
-GitHub profile: https://github.com/undefined   
+GitHub profile: https://github.com/cwclair   
 Email address: christopher.w.clair@gmail.com

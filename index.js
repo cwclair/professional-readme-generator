@@ -3,7 +3,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 
 // TODO: Create an array of questions for user input
-const questions = ['What is the title of your project?', 'Enter a description of your project.', 'Installation instructions (if applicable):', 'Provide instructions and examples for use.', 'List any collaborators, third-party assets, or tutorials you used to create this project.', 'What license did you use for this project?', 'List any test instructions.', 'Enter your GitHub profile link.', 'Enter your email address.'];
+const questions = ['What is the title of your project?', 'Enter a description of your project.', 'Installation instructions (if applicable):', 'Provide instructions and examples for use.', 'List any collaborators, third-party assets, or tutorials you used to create this project.', 'What license did you use for this project?', 'List any test instructions.', 'Enter your GitHub username.', 'Enter your email address.'];
 
 inquirer
   .prompt([
@@ -46,7 +46,7 @@ inquirer
     {
       type: 'input',
       message: questions[7],
-      name: 'gitHubUrl',
+      name: 'gitHubUserName',
     },
     {
       type: 'input',
@@ -67,25 +67,25 @@ inquirer
 7. [Questions](#questions)
     
 ## Description <a name="description"></a>
-    ${response.description}
+${response.description}
     
 ## Installation <a name="installation"></a>
-    ${response.installation}
+${response.installation}
     
 ## Usage <a name="usage"></a>
-    ${response.usage}
+${response.usage}
     
 ## License <a name="license"></a>
-    ${response.license}
+${response.license}
     
 ## Contributing <a name="contributing"></a>
-    ${response.collaborators}
+${response.collaborators}
     
 ## Tests <a name="tests"></a>
-    ${response.tests}
+${response.tests}
 
 ## Questions <a name="questions"></a>
-GitHub profile: https://github.com/${response.githubUserName}   
+GitHub profile: https://github.com/${response.gitHubUserName}   
 Email address: ${response.emailAddress}`, (err) =>
     err ? console.error(err) : console.log('Commit logged!')
 )});
