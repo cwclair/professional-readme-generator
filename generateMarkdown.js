@@ -86,8 +86,8 @@ ${data.license}
 ${data.tests}
       
 ## Questions
-${data.gitHubUserName}
-${data.emailAddress}
+My GitHub profile: https://github.com/${data.gitHubUserName}    
+My email address: ${data.emailAddress}
 `;
 }
 module.exports = generateMarkdown;
