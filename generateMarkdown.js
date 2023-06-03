@@ -1,49 +1,56 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  
+  if (license === 'MIT') {
+    return '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
+  }
+  else if (license === 'Apache 2.0') {
+    return '![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)'
+  }
+  else if (license === 'GPL 3.0') {
+    return '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)'
+  }
+  else if (license === 'Mozilla Public License 2.0') {
+    return '![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)'
+  }
+  else {
+    return ''
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+
+    if (license === 'MIT') {
+      return '[MIT License](https://opensource.org/licenses/MIT)'
+    }
+    else if (license === 'Apache 2.0') {
+      return '[Apache 2.0 License](https://opensource.org/licenses/Apache-2.0)'
+    }
+    else if (license === 'GPL 3.0') {
+      return '[GPL 3.0 License](https://www.gnu.org/licenses/gpl-3.0)'
+    }
+    else if (license === 'Mozilla Public License 2.0') {
+      '![License: MPL 2.0](https://opensource.org/licenses/MPL-2.0)'
+    }
+    else {
+      return ''
+    }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(response) {
-  return `# ${projectName}
-
-## Table of Contents
-1. [Description](#description)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [License](#license)
-5. [Contributing](#contributing)
-6. [Tests](#tests)
-7. [Questions](#questions)
-      
-## Description <a name="description"></a>
-${description}
-      
-## Installation <a name="installation"></a>
-${installation}
-      
-## Usage <a name="usage"></a>
-${usage}
-      
-## License <a name="license"></a>
-${license}
-      
-## Contributing <a name="contributing"></a>
-${collaborators}
-      
-## Tests <a name="tests"></a>
-${tests}
-  
-## Questions <a name="questions"></a>
-GitHub profile: https://github.com/${gitHubUserName}   
-Email address: ${emailAddress}`;
+function renderLicenseSection(license) {
+if (license == '') {
+  return ''
+}else {
+  let licenseBadge = renderLicenseBadge(license);
+  let licenseLink = renderLicenseLink(license);
+  return `[![License](${licenseBadge})](${licenseLink})`
+}
 }
 
-module.exports = generateMarkdown;
+// TODO: Create a function to generate markdown for README
+function generateMarkdown() {}
