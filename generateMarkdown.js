@@ -53,4 +53,40 @@ if (license == '') {
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown() {}
+function generateMarkdown(data) {
+  return `# ${data.projectName}
+      
+${license}
+      
+## Description
+${data.description}
+      
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Collaborators](#collaborators)
+* [License](#license)
+* [Tests](#tests)
+* [Questions](#questions)
+      
+## Installation
+${data.installation}
+      
+## Usage
+${data.usage}
+      
+## Collaborators
+${data.collaborators}
+      
+## License
+${data.license}
+      
+## Tests
+${data.tests}
+      
+## Questions
+${data.gitHubUserName}
+${data.emailAddress}
+`;
+}
+module.exports = generateMarkdown;
