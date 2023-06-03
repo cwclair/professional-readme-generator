@@ -1,9 +1,9 @@
-# al;dsjfkafj
+# Professional README Generator
       
-[![License]()]()
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) [MIT License](https://opensource.org/licenses/MIT)
       
 ## Description
-asd;lkfjd;kl
+This application creates a README file with a Table of Contents and several relevant sections.
       
 ## Table of Contents
 * [Installation](#installation)
@@ -14,20 +14,20 @@ asd;lkfjd;kl
 * [Questions](#questions)
       
 ## Installation
-l;asdfj;lakj
+At the command line, enter "node index.js”
       
 ## Usage
-asd;lfjsa;lj
+The user will be prompted to provide information: Project name, description, installation instructions, usage instructions, collaborator and resource attribution, license info, testing instructions, GitHub name, and email.
       
 ## Collaborators
-as;ldfkdls;jk
+This application is built using lessons and tutorials from my edX Full Stack Bootcamp course. The license badges come from this GitHub page: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba.
       
 ## License
-Apache
+MIT
       
 ## Tests
-a;sldfj;alj
+None
       
 ## Questions
 cwclair
-chrisclair33@yahoo.com
+christopher.w.clair@gmail.com

@@ -48,7 +48,7 @@ if (license == '') {
 }else {
   let licenseBadge = renderLicenseBadge(license);
   let licenseLink = renderLicenseLink(license);
-  return `[![License](${licenseBadge})](${licenseLink})`
+  return `${licenseBadge} ${licenseLink}`
 }
 }
 
