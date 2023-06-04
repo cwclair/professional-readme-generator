@@ -31,15 +31,15 @@ THEN I am taken to the corresponding section of the README
 
 ## Description of the Work
 
-The application begins when the user types "node index.js" on the command line. The user is greeted with a set of prompts about the project for which the README document is being created. It covers the following topics: project title, project description, installation instructions, usage information, contributions, license (this prompt is followed with a list of options), testing instructions, and contact info (GitHub user name and email address). These questions are posed using the inquirer package. These responses fill in the appropriate spots on the generateMarkdown.js file. In some cases, the responses simply fill in the string literal in the function generateMarkdown or to determine with license badge and link should be generated.
+The application begins when the user types "node index.js" on the command line. The user is greeted with a set of prompts about the project for which the README document is being created. It covers the following topics: project title, project description, installation instructions, usage information, contributions, license (this prompt is followed with a list of options), testing instructions, and contact info (GitHub user name and email address). These questions are posed using the inquirer package. These responses fill in the appropriate spots on the generateMarkdown.js file. In some cases, the responses simply fill in the string literal in the function generateMarkdown or to determine which license badge and license link should be generated.
 
-Once the attributes have been populated with the user input, it can be accessed via module export. On index.js, the variable generateMarkdown is set equal to require('./generateMarkdown.js'). Then we write a new file -- in this case, I call it README-auto.md to distinguish the sample README from this very README -- using the populated string literal.
+Once the attributes have been populated with the user input, the generateMarkdown function can be accessed via module export. On index.js, the variable generateMarkdown is set equal to require('./generateMarkdown.js'). Then we write a new file -- in this case, I call it README-auto.md to distinguish the sample README from this very README -- using the populated string literal.
 
 I listed four potential license options, ones that are commonly used, and also included a "none" and an "other" option. In the latter two cases, badge and link are not populated toward the top of the README file. 
 
 ## Overview of the Site
 
-Pretty straightforward. I have included a couple of screenshots, and the subsequent section includes a link to a video walkthrough of the application in use.
+I have included a couple of screenshots, and the subsequent section includes a link to a video walkthrough of the application in use.
     
 Here is a look at the prompts that the user answers:
     
