@@ -24,13 +24,13 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
 
     if (license === 'MIT') {
-      return '[MIT License](https://opensource.org/licenses/MIT)'
+      return '[License: MIT](https://opensource.org/licenses/MIT)'
     }
     else if (license === 'Apache 2.0') {
-      return '[Apache 2.0 License](https://opensource.org/licenses/Apache-2.0)'
+      return '[License: Apache 2.0](https://opensource.org/licenses/Apache-2.0)'
     }
     else if (license === 'GPL 3.0') {
-      return '[GPL 3.0 License](https://www.gnu.org/licenses/gpl-3.0)'
+      return '[License: GPL 3.0](https://www.gnu.org/licenses/gpl-3.0)'
     }
     else if (license === 'Mozilla Public License 2.0') {
       '![License: MPL 2.0](https://opensource.org/licenses/MPL-2.0)'
